@@ -3,4 +3,6 @@ class Group < ApplicationRecord
 
   has_many :entity_groups, dependent: :destroy
   has_many :entities, through: :entity_groups, dependent: :destroy
+
+  validates :name, :icon, presence: true
 end
