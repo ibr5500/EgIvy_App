@@ -3,9 +3,9 @@
 one:
   name: MyString
   icon: MyString
-  users: one
+  user: one
 
 two:
   name: MyString
   icon: MyString
-  users: two
+  user: two

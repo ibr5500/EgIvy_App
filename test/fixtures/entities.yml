@@ -3,9 +3,9 @@
 one:
   name: MyString
   amount: 1.5
-  users: one
+  user: one
 
 two:
   name: MyString
   amount: 1.5
-  users: two
+  user: two
