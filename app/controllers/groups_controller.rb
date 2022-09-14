@@ -3,6 +3,10 @@ class GroupsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @groups = Group.all
+    if user_signed_in?
+      @groups = current_user.groups
+    else
+      render 'users/index'
+    end
   end
 end

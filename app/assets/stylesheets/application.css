@@ -55,3 +55,11 @@
 .offcanvas.offcanvas-end {
   left: 0;
 }
+
+.home-container {
+  margin: 5rem auto;
+}
+
+.alert {
+  margin: 5rem 0 -4rem 0;
+}

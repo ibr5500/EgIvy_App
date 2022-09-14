@@ -11,16 +11,16 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <%= link_to 'Categories', root_path, class:"nav-link" %> 
-          </li>
-          <li class="nav-item">
-            <%= link_to '', class:"nav-link" %>
-          </li>
-          <hr>
           <% if user_signed_in? %>
             <li class="nav-item">
-              <%= link_to 'log-out', destroy_user_session_path, class:"nav-link" %> 
+              <%= link_to 'Categories', user_groups_path(user_id: current_user.id), class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to '', class:"nav-link" %>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <%= link_to 'Log-out', destroy_user_session_path, data: { turbo_method: :delete }, class:"nav-link" %> 
             </li>
           <% else %>
             <li class="nav-item">
