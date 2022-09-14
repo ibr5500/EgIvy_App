@@ -23,7 +23,8 @@
   transform: scale(1.2, 1.2);
 }
 
-.navbar, .container-fluid>div {
+.navbar,
+.container-fluid > div {
   background: #3370b3;
   color: #fff;
 }
@@ -33,18 +34,9 @@
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
   color: #fff;
-  background-color: none;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
-}
-
-.navbar-nav .nav-link {
-  color: #fff;
-}
-
-.offcanvas.offcanvas-end {
-  left: 0;
 }
 
 .nav-link {
@@ -56,3 +48,10 @@
   transform: scale(1.2, 1.2);
 }
 
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.offcanvas.offcanvas-end {
+  left: 0;
+}
