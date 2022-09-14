@@ -3,8 +3,8 @@ class Ability
 
   def initialize(user)
     user ||= User.new
-    can %i[read], :all
-    can %i[manage], :all, user:
+    can :read, :all
+    can :manage, :all, user_id: user.id
     #
     #   return unless user.present?
     #   can :read, :all

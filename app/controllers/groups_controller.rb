@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
 
   def index
     if user_signed_in?
-      @groups = current_user.groups.lmit
+      @groups = current_user.groups
     else
       render 'users/index'
     end
@@ -17,11 +17,18 @@ class GroupsController < ApplicationController
     @group = current_user.groups.new
   end
 
+  def destroy
+    @group = Group.includes(:user).find(params[:id])
+    @group.destroy
+    flash[:success] = "You have deleted your '#{@group.name}' !!."
+    redirect_to user_groups_path(user_id: current_user.id)
+  end
+
   def create
     @group = current_user.groups.create(group_params)
     if @group.save
       flash[:success] = "'#{@group.name}' created successfully !!"
-      redirect_to user_groups_path(user: current_user)
+      redirect_to user_groups_path(user_id: current_user.id)
     else
       flash.now[:error] = "Couldn't create '#{@group.name} !!'"
       render :new
@@ -31,6 +38,6 @@ class GroupsController < ApplicationController
   private
 
   def group_params
-    params.require(:group).pirmit(:name, :icon)
+    params.require(:group).permit(:name, :icon)
   end
 end

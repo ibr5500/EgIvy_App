@@ -93,3 +93,46 @@
 .app-name h3 {
   font-size: 8rem;
 }
+
+.cards-container {
+  margin: 8rem auto;
+}
+
+.card-body {
+  padding: 2rem;
+}
+.card-icon {
+  width: 30%;
+  margin: auto;
+}
+.card-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.6rem;
+}
+
+.amount {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.add-category {
+  color: #3370b3;
+  border: 1.5px solid #3370b3;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 0.4rem 0.2rem;
+}
+
+.add-category:hover {
+  color: #fff;
+  background: #3370b3;
+}

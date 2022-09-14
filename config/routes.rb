@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   resources :groups, only: [:index]
 
   resources :users do
-    resources :groups, only: [:index, :new, :show] do
+    resources :groups, only: [:index, :new, :create, :destroy] do
       resources :entities, only: [:index]
     end
   end
