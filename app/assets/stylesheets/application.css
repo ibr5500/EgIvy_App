@@ -1,15 +1,58 @@
-/*
-* This is a manifest file that'll be compiled into application.css, which will include all the files
-* listed below.
-*
-* Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
-* vendor/assets/stylesheets directory can be referenced here using a relative path.
-*
-* You're free to add application-wide styles to this file and they'll appear at the bottom of the
-* compiled file so the styles you add here take precedence over styles defined in any other CSS
-* files in this directory. Styles in this file should be added after the last require_* statement.
-* It is generally better to create a new file per style scope.
-*
-*= require_tree .
-*= require_self
-*/
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
+.form-container {
+  width: 70%;
+  margin: 6rem auto 0 auto;
+  color: #3370b3;
+}
+
+.brand {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.brand:hover {
+  color: #fff;
+  transform: scale(1.2, 1.2);
+}
+
+.navbar, .container-fluid>div {
+  background: #3370b3;
+  color: #fff;
+}
+
+.navbar-toggle {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: #fff;
+  background-color: none;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.offcanvas.offcanvas-end {
+  left: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link:hover {
+  transform: scale(1.2, 1.2);
+}
+
