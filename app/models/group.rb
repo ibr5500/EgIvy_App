@@ -3,5 +3,5 @@ class Group < ApplicationRecord
 
   has_and_belongs_to_many :entities, dependent: :destroy
 
-  validates :name, :icon, presence: true
+  validates :name, presence: true
 end

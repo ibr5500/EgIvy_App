@@ -2,7 +2,7 @@
 
 .form-container {
   width: 70%;
-  margin: 8rem auto 0 auto;
+  margin: 6.5rem auto 0 auto;
   color: #3370b3;
 }
 
@@ -58,8 +58,38 @@
 
 .home-container {
   margin: 5rem auto;
+  width: 80%;
 }
 
 .alert {
-  margin: 5rem 0 -4rem 0;
+  margin: 5rem 0 0 0;
+}
+
+.btn-container {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  color: #60b524
+}
+
+.btn-container .btn-out{
+  color: #fff;
+  background-color: #60b524;
+}
+
+.btn-container .btn-out:hover {
+  background-color: #fff;
+  transform: scale(1.2, 1.2);
+}
+
+.app-name {
+  margin: 10rem auto 5rem auto;
+  color: #60b524;
+  text-align: center;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-weight: 600;
+}
+
+.app-name h3 {
+  font-size: 8rem;
 }
