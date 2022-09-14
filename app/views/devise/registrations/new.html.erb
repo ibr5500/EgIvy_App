@@ -6,22 +6,18 @@
 
     <div class="row mb-3 d-flex flex-column">
       <div class="form-group mb-3 col-sm-7">
-        <%= f.label "Full name" %>
-        <%= f.text_field :name, placeholder: "Jhon Doe", autofocus: true, autocomplete: "name", class: "form-control" %>
+        <%= f.text_field :name, placeholder: "Full name", autofocus: true, autocomplete: "name", class: "form-control" %>
       </div>
 
       <div class="form-group mb-3 col-sm-7">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, placeholder: "jhon@gmail.com", autofocus: true, autocomplete: "email", class: "form-control" %>
+        <%= f.email_field :email, placeholder: "email@gmail.com", autofocus: true, autocomplete: "email", class: "form-control" %>
       </div>
 
       <div class="form-group mb-3 col-sm-7">
-        <%= f.label :password %><br />
-        <%= f.password_field :password, placeholder: "(6 characters minimum)", autocomplete: "new-password", class: "form-control" %>
+        <%= f.password_field :password, placeholder: "password", autocomplete: "new-password", class: "form-control" %>
       </div>
 
       <div class="form-group mb-3 col-sm-7">
-        <%= f.label :password_confirmation %><br />
         <%= f.password_field :password_confirmation, placeholder: "repeat-password", autocomplete: "new-password", class: "form-control" %>
       </div>
       
