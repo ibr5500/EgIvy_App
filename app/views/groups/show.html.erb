@@ -1,11 +1,30 @@
 <%= render partial: "shared/costume" , locals: {title: 'Transactions'}, class:'page-title' %>
 <section class='home-container'>
-  <%= @group.name %>: <%= @group.entities.sum(:amount) %> <br>
-  <% @group_entities.each do |entity| %>
-    <div class="card-icon">
-      <img src= <%= @group.icon %> alt= '<%= @group.name + ' icon'%>' class="img-fluid rounded-start"/>
+  <div class='details'>
+    <div class='transaction-head d-flex flex-row justify-content-between mb-3'>
+      <div class='category-name'>
+        <%= @group.name %>
+      </div>
+      <div class='d-flex flex-row mt-2 mb-0 tot'>
+        <p class='me-1 fw-semibold'>Total: </p>$<%= @group.entities.sum(:amount) %>
+      </div>
     </div>
-    [<%= entity.id %>] - <%= entity.name %>: $<%= entity.amount %>
-    <br>
-  <% end %>
+    <div>
+      <div class='transactions-card d-flex flex-column justify-content-between'>
+        <% @group_entities.order(created_at: :desc).limit(4).each do |entity| %>
+          <div class='card transaction my-3 d-flex flex-row'>
+            <img src= <%= @group.icon %> alt= '<%= @group.name + ' icon'%>' class="img-fluid rounded-start"/>
+            <div class="card-body d-flex flex-row justify-content-between fw-semibold">
+              <%= entity.name %>
+              <div class='d-flex flex-column float-end gap-2'>
+                $<%= entity.amount %>
+                <%= button_to 'Remove', user_group_entity_path(user_id: current_user.id, group_id: @group.id, id: entity.id), method: :delete, class:'btn btn-outline-danger' %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <%= link_to 'Add a Transaction', new_user_group_entity_path(user_id: current_user.id, group_id: @group.id), class:"add-category" %>
+  </div>
 </section>

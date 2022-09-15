@@ -95,6 +95,7 @@
 }
 
 .cards-container {
+  max-width: 540px;
   margin: 8rem auto;
 }
 
@@ -103,7 +104,7 @@
 }
 
 .card-icon {
-  width: 30%;
+  width: 40%;
   margin: auto;
 }
 
@@ -118,12 +119,13 @@
 }
 
 .card-title {
-  font-size: 1.6rem;
+  font-size: 1.19rem;
 }
 
 .amount {
   font-size: 1.2rem;
   font-weight: 500;
+  margin: 0 auto;
 }
 
 .add-category {
@@ -165,4 +167,36 @@ select {
 .nav_link_btn:hover {
   color: #fff;
   transform: scale(1.2, 1.2);
+}
+
+.details {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.transaction-head {
+  background: #fff;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.category-name {
+  color: #a5a5a5;
+  font-size: 1.7rem;
+}
+
+.tot {
+  font-size: 1.2rem;
+}
+
+.transactions-card {
+  max-width: 540px;
+}
+
+.transaction img {
+  width: 30%;
+}
+
+.entity-name {
+  color: #3370b3;
 }

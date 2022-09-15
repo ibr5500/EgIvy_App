@@ -11,6 +11,14 @@ class EntitiesController < ApplicationController
     @entity = @group.entities.new
   end
 
+  def destroy
+    @group = Group.includes(:user).find(params[:group_id])
+    @entity = Entity.includes(:user).find(params[:id])
+    @entity.destroy
+    flash[:success] = "You have deleted your '#{@entity.name}' !!."
+    redirect_to user_group_path(user_id: current_user.id, id: @group.id)
+  end
+
   def create
     @group = Group.includes(:user).find(params[:group_id])
     @entity = current_user.entities.create(entity_params)
