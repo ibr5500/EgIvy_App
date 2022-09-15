@@ -15,7 +15,10 @@
           <div class='card transaction my-3 d-flex flex-row'>
             <img src= <%= @group.icon %> alt= '<%= @group.name + ' icon'%>' class="img-fluid rounded-start"/>
             <div class="card-body d-flex flex-row justify-content-between fw-semibold">
-              <%= entity.name %>
+              <div class='d-flex flex-column float-end gap-3'>
+                <%= entity.name %>
+                <small class="text-color"><%= entity.created_at.strftime("%d-%b-%Y") %></small>
+              </div>
               <div class='d-flex flex-column float-end gap-2'>
                 $<%= entity.amount %>
                 <%= button_to 'Remove', user_group_entity_path(user_id: current_user.id, group_id: @group.id, id: entity.id), method: :delete, class:'btn btn-outline-danger' %>
