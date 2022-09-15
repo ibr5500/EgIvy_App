@@ -3,7 +3,7 @@ class GroupsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @groups = current_user.groups
+    @groups = current_user.groups.includes(:user)
   end
 
   def show
