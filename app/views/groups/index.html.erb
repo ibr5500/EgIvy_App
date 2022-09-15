@@ -1,0 +1,31 @@
+<%= render partial: "shared/navbar" , locals: {title: 'Categories'}, class:'page-title' %>
+<section class='home-container'>
+  <div class="cards-container mb-3">
+    <% if @groups.length > 0 %>
+      <% @groups.each do |g| %>
+        <div class="card g-0 d-flex flex-row my-3 p-2">    
+          <div class="card-icon">
+            <img src= <%= g.icon %> alt= '<%= g.name + ' icon'%>' class="img-fluid rounded-start"/>
+          </div>
+          <div class="card-content col-md-8">
+            <div class="card-body justify-content-between d-flex flex-row px-1 mx-2">
+              <div class='d-flex flex-column justify-content-between'>
+                <p class="card-title"><%= link_to g.name, user_group_path(user_id: current_user.id, id: g.id), class:"title-link" %></p>
+                <p class="card-text"><small class="text-color"><%= g.created_at.strftime("%d-%b-%Y") %></small></p>
+              </div>
+              <div class='d-flex flex-column justify-content-between gap-1'>
+                <p class="w-3 amount"> $<%= g.entities.sum(:amount) %></p>
+                <%= button_to 'Remove', user_group_path(user_id: current_user.id, id: g.id), method: :delete, class:'btn btn-outline-danger' %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="card p-3 my-3 text-center">
+        <p>The Category list is <em>empty</em> !!</p>
+      </div>
+    <% end %>
+    <%= link_to 'Add a Category', new_user_group_path(user_id: current_user.id), class:"add-category" %>
+  </div>
+</section>
