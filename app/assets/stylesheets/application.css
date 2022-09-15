@@ -57,7 +57,7 @@
 }
 
 .home-container {
-  margin: 5rem auto;
+  margin: 6.5rem auto;
   width: 80%;
 }
 
@@ -142,4 +142,27 @@
 .title-link {
   text-decoration: none;
   color: #3370b3;
+}
+
+.page-title {
+  color: #fff;
+  font-size: 2rem;
+}
+
+select {
+  padding: 3px 6px;
+  border: 1px solid #3333;
+  border-radius: 8px;
+  color: #3370b3;
+}
+
+.nav_link_btn {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav_link_btn:hover {
+  color: #fff;
+  transform: scale(1.2, 1.2);
 }

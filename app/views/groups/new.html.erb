@@ -1,3 +1,4 @@
+<%= render partial: "shared/costume" , locals: {title: 'Categories'}, class:'page-title' %>
 <section class= 'form-container'>
   <h2>New Category</h2>
   <%= form_with model: @group, url: user_groups_path, method: :post do |f| %>

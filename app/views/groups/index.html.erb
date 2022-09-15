@@ -1,3 +1,4 @@
+<%= render partial: "shared/navbar" , locals: {title: 'Categories'}, class:'page-title' %>
 <section class='home-container'>
   <div class="cards-container mb-3" style="max-width: 540px;">
     <% if @groups.length > 0 %>
@@ -22,7 +23,7 @@
       <% end %>
     <% else %>
       <div class="card p-3 my-3 text-center">
-        <p>The Group list is <em>empty</em> !!</p>
+        <p>The Category list is <em>empty</em> !!</p>
       </div>
     <% end %>
     <%= link_to 'Add a Category', new_user_group_path(user_id: current_user.id), class:"add-category" %>

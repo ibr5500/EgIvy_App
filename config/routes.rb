@@ -6,14 +6,15 @@ Rails.application.routes.draw do
   end
 
   authenticated :users do
-    root 'groups#index', as: ''
+    #get "/home", to: "groups#index", as: "home"
+    #root 'groups#index', as: ''
   end
 
-  resources :groups, only: [:index]
+  resources :home, controller: :groups, only: [:index]
 
   resources :users do
-    resources :groups, only: [:index, :show, :new, :create, :destroy] do
-      resources :entities, only: [:index, :new, :create, :destroy]
+    resources :groups, :path => 'categories', only: [:index, :show, :new, :create, :destroy] do
+      resources :entities, :path => 'transactions', only: [:new, :create, :destroy]
     end
   end
 end
