@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Entities", type: :request do
+RSpec.describe 'Entities', type: :request do
   include Devise::Test::IntegrationHelpers
 
   describe 'Entity request test' do
