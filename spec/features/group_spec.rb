@@ -2,18 +2,10 @@ require 'rails_helper'
 
 RSpec.feature 'Groups', type: :feature do
   include Devise::Test::IntegrationHelpers
-  # before(:all) do
-  #  @user = User.create(name: 'Tester', email: 'test@gmail.com', password: '12345678')
-  # end
-
-  # it 'Page sholud have Add a Category' do
-  #  visit '/users/sign_in'
-  #  expect(page).to have_content('Log in')
-  # end
 
   before(:each) do
-    @user = User.create(name: 'Ali Raza', email: 'hello@example.com', password: 'password')
-    @group = Group.create(name: 'Shopping', icon: 'https://i.imgur.com/Ar3Lf3Dt.png', user_id: @user.id)
+    @user = User.create(name: 'Jhon Doe', email: 'jhon@example.com', password: 'password')
+    @group = Group.create(name: 'Category', icon: 'https://google.com', user_id: @user.id)
 
     sign_in @user
   end
@@ -38,17 +30,17 @@ RSpec.feature 'Groups', type: :feature do
     expect(page).to have_button('Add a Category')
   end
 
-  scenario 'Should page have (Add a Transaction) Link' do
+  scenario 'Should page have (Add a Category) Button' do
     visit user_groups_path(@user)
     first(:link, @group.name).click
 
-    expect(page).to have_content('Add a Transaction')
+    expect(page).to have_content(@group.name)
   end
 
-  it 'Should page have (Remove) Button' do
+  scenario 'Should page have (Add a Category) Button' do
     visit user_groups_path(@user)
     first(:link, @group.name).click
 
-    expect(page).to have_content('Total:')
+    expect(page).to have_content(@group.name)
   end
 end
