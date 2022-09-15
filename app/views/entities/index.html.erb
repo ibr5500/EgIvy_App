@@ -1,1 +1,7 @@
-<h1>Entity List:</h1>
+<section class='home-container'>
+  <h1>Entity List:</h1>
+  <% @entities.each do |entity| %>
+    <%= entity.name %>: <%= entity.amount %>
+    <br>
+  <% end %>
+</section>

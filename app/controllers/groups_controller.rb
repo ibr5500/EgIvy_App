@@ -11,6 +11,8 @@ class GroupsController < ApplicationController
   end
 
   def show
+    @group = Group.includes(:user).find(params[:id])
+    @group_entities = @group.entities.all
   end
 
   def new

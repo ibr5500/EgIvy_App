@@ -69,10 +69,10 @@
   width: 100%;
   margin: 0 auto;
   justify-content: center;
-  color: #60b524
+  color: #60b524;
 }
 
-.btn-container .btn-out{
+.btn-container .btn-out {
   color: #fff;
   background-color: #60b524;
 }
@@ -101,10 +101,12 @@
 .card-body {
   padding: 2rem;
 }
+
 .card-icon {
   width: 30%;
   margin: auto;
 }
+
 .card-icon img {
   width: 100%;
   height: auto;
@@ -135,4 +137,9 @@
 .add-category:hover {
   color: #fff;
   background: #3370b3;
+}
+
+.title-link {
+  text-decoration: none;
+  color: #3370b3;
 }

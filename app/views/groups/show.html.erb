@@ -1,0 +1,10 @@
+<section class='home-container'>
+  <%= @group.name %> <br>
+  <% @group_entities.each do |entity| %>
+    <div class="card-icon">
+      <img src= <%= @group.icon %> alt= '<%= @group.name + ' icon'%>' class="img-fluid rounded-start"/>
+    </div>
+    [<%= entity.id %>] - <%= entity.name %>: $<%= entity.amount %>
+    <br>
+  <% end %>
+</section>

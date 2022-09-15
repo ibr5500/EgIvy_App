@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   resources :groups, only: [:index]
 
   resources :users do
-    resources :groups, only: [:index, :new, :create, :destroy] do
-      resources :entities, only: [:index]
+    resources :groups, only: [:index, :show, :new, :create, :destroy] do
+      resources :entities, only: [:index, :new, :create, :destroy]
     end
   end
 end
