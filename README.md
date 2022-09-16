@@ -15,7 +15,7 @@ Deployed by heroku [click](https://egivy.herokuapp.com/) for the live demo.
 
 ## Demo video:
 
-Please [Click](https://www.loom.com/share/09d0ffbf633241738055946b211bf6e8) to watch the demo video.
+Please [Click](https://www.loom.com/share/e2b1372304af4995bcfd3415b7089437) to watch the demo video.
 
 ## Getting Started
 
