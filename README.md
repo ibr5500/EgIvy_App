@@ -1,6 +1,6 @@
 # ![](https://img.shields.io/badge/Microverse-blueviolet) 
 
-# Budget_App
+# EgIvy
 
 ## Description: A budget application where users can monitor the expenses.
 
