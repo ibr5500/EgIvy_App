@@ -6,7 +6,8 @@
   color: #3370b3;
 }
 
-.brand, .logo {
+.brand,
+.logo {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
