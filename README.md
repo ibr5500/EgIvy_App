@@ -1,6 +1,6 @@
 # ![](https://img.shields.io/badge/Microverse-blueviolet) 
 
-# Budget_App
+# EgIvy
 
 ## Description: A budget application where users can monitor the expenses.
 
@@ -15,7 +15,7 @@ Deployed by heroku [click](https://egivy.herokuapp.com/) for the live demo.
 
 ## Demo video:
 
-Please [Click](https://www.loom.com/share/09d0ffbf633241738055946b211bf6e8) to watch the demo video.
+Please [Click](https://www.loom.com/share/e2b1372304af4995bcfd3415b7089437) to watch the demo video.
 
 ## Getting Started
 
@@ -81,7 +81,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments:
 
 - [Gregoire Vella](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) - for original design.
-- Great appreciation to [Microverse](www.microverse.org) staff (Students Success, Code Reviewer, Coding partners, ..., etc.)
+- Great appreciation to [Microverse](https://www.microverse.org/) staff (Students Success, Code Reviewer, Coding partners, ..., etc.)
 
 
 ## 📝 License
