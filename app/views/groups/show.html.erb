@@ -11,7 +11,7 @@
     </div>
     <div>
       <div class='transactions-card d-flex flex-column justify-content-between'>
-        <% @group_entities.order(created_at: :desc).limit(4).each do |entity| %>
+        <% @group_entities.order(created_at: :desc).each do |entity| %>
           <div class='card transaction my-3 d-flex flex-row'>
             <img src= <%= @group.icon %> alt= '<%= @group.name + ' icon'%>' class="img-fluid rounded-start"/>
             <div class="card-body d-flex flex-row justify-content-between fw-semibold">
