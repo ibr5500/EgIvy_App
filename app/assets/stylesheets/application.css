@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
+.form-container {
+  width: 70%;
+  margin: 6.5rem auto 0 auto;
+  color: #3370b3;
+}
+
+.brand,
+.logo {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.brand:hover {
+  color: #fff;
+  transform: scale(1.2, 1.2);
+}
+
+.navbar,
+.container-fluid > div {
+  background: #3370b3;
+  color: #fff;
+}
+
+.navbar-toggle {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: #fff;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.offcanvas.offcanvas-end {
+  left: 0;
+}
+
+.home-container {
+  margin: 6.5rem auto;
+  width: 80%;
+}
+
+.alert {
+  margin: 5rem 0 0 0;
+}
+
+.btn-container {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  color: #60b524;
+}
+
+.btn-container .btn-out {
+  color: #fff;
+  background-color: #60b524;
+}
+
+.btn-container .btn-out:hover {
+  background-color: #fff;
+  transform: scale(1.2, 1.2);
+}
+
+.app-name {
+  margin: 10rem auto 5rem auto;
+  color: #60b524;
+  text-align: center;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-weight: 600;
+}
+
+.app-name h3 {
+  font-size: 8rem;
+}
+
+.cards-container {
+  max-width: 540px;
+  margin: 8rem auto;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-icon {
+  width: 40%;
+  margin: auto;
+}
+
+.card-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.19rem;
+}
+
+.amount {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.add-category {
+  color: #3370b3;
+  border: 1.5px solid #3370b3;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 0.4rem 0.2rem;
+}
+
+.add-category:hover {
+  color: #fff;
+  background: #3370b3;
+}
+
+.title-link {
+  text-decoration: none;
+  color: #3370b3;
+}
+
+.page-title {
+  color: #fff;
+  font-size: 2rem;
+}
+
+select {
+  padding: 3px 6px;
+  border: 1px solid #3333;
+  border-radius: 8px;
+  color: #3370b3;
+}
+
+.nav_link_btn {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav_link_btn:hover {
+  color: #fff;
+  transform: scale(1.2, 1.2);
+}
+
+.details {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.transaction-head {
+  background: #fff;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.category-name {
+  color: #a5a5a5;
+  font-size: 1.7rem;
+}
+
+.tot {
+  font-size: 1.2rem;
+}
+
+.transactions-card {
+  max-width: 540px;
+}
+
+.transaction img {
+  width: 30%;
+}
+
+.entity-name {
+  color: #3370b3;
+}
+
+.text-color {
+  color: #b2b2b2;
+}

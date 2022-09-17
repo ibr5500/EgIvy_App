@@ -1,0 +1,19 @@
+<%= render partial: "shared/costume" , locals: {title: 'Categories'}, class:'page-title' %>
+<section class= 'form-container'>
+  <h2>New Category</h2>
+  <%= form_with model: @group, url: user_groups_path, method: :post do |f| %>
+    <div class="row mb-3 d-flex flex-column">
+      <div class="form-group mb-3 col-sm-7">
+        <%= f.text_field :name, placeholder: "Category name", autofocus: true, autocomplete: "name", class: "form-control" %>
+      </div>
+
+      <div class="form-group mb-3 col-sm-7">
+        <%= f.url_field :icon, placeholder: "Category icon url", autofocus: true, autocomplete: "icon", class: "form-control" %>
+      </div>
+
+      <div class="actions mb-3 col-sm-2">
+        <%= f.submit "Add a Category", class: "btn btn-outline-success" %>
+      </div>
+    </div>
+  <% end %>
+</section>

@@ -1,0 +1,38 @@
+<nav class="navbar fixed-top">
+  <div class="container-fluid flex-row-reverse">
+    <%= link_to 'Egivy', root_path, class:"brand" %>
+    <h3><%= title %></h3>
+    <a class="navbar-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </a>
+    <div class="offcanvas offcanvas-end align-items-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header flex-column-reverse">
+        <h5 class="offcanvas-title mt-4 logo" id="offcanvasDarkNavbarLabel">EgIvy</h5>
+        <button type="button" class="btn-close btn-close-white p-3 border border-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to 'Categories', user_groups_path(user_id: current_user.id), class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Add a Category', new_user_group_path(user_id: current_user.id), class:"nav-link" %>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <%= link_to 'Log-out', destroy_user_session_path, data: { turbo_method: :delete }, class:"nav-link" %> 
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to 'Log in', new_user_session_path, class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Sign up', new_user_registration_path, class:"nav-link" %> 
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
