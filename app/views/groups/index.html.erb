@@ -2,7 +2,7 @@
 <section class='home-container'>
   <div class="cards-container mb-3">
     <% if @groups.length > 0 %>
-      <% @groups.order(updated_at: :desc).limit(4).each do |g| %>
+      <% @groups.order(updated_at: :desc)limit(5).each do |g| %>
         <div class="card g-0 d-flex flex-row my-3 p-2">    
           <div class="card-icon">
             <img src= <%= g.icon %> alt= '<%= g.name + ' icon'%>' class="img-fluid rounded-start"/>
