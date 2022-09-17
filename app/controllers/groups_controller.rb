@@ -29,7 +29,7 @@ class GroupsController < ApplicationController
       redirect_to user_groups_path(user_id: current_user.id)
     else
       flash.now[:error] = "Couldn't create '#{@group.name} !!'"
-      render :new
+      redirect_to new_user_group_path(current_user)
     end
   end
 

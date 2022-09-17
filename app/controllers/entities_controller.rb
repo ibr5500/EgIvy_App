@@ -29,7 +29,7 @@ class EntitiesController < ApplicationController
       redirect_to user_group_path(user_id: current_user.id, id: @group.id)
     else
       flash.now[:error] = "Couldn't create '#{@entity.name} !!'"
-      render :new
+      redirect_to new_user_group_entity(current_user, @group.id)
     end
   end
 
