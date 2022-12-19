@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-Deployed by heroku [click](https://egivy.herokuapp.com/) for the live demo.
+Deployed by heroku [click](https://egivy.onrender.com) for the live demo.
 
 ## Demo video:
 
