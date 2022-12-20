@@ -83,4 +83,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>s
+  url: <%= ENV['DATABASE_URL'] %>
+  database: egivydb
+  username: egivydb_user
+  password: <%= ENV["EGIVYDB_DATABASE_PASSWORD"] %>
