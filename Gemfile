@@ -9,7 +9,7 @@ gem 'rails', '~> 7.0.4'
 # devise
 gem 'devise'
 
-gem 'rack-cors'
+gem 'rack-cors', '>= 3.0.0'
 # authoraization
 gem 'cancancan'
 
